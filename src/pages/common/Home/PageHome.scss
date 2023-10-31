@@ -1,0 +1,13 @@
+#pageHome {
+    width: 300px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+
+    .pageHome-contents{
+        display: flex;
+        justify-content: center;
+    }
+}

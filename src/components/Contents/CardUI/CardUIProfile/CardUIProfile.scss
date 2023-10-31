@@ -1,0 +1,49 @@
+.CardUIProfile{
+    padding: 12px;
+    margin: 12px;
+
+    .profile-contents{
+        display: flex;
+        margin: 12px;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        //-webkit-box-pack: justify;
+        justify-content: space-between;
+        position: relative;
+
+        .name{
+            //margin: 0px;
+            font-size: 1.5rem;
+            color: #333333;
+            font-weight: 600;
+            line-height: 2rem;
+            white-space: pre-wrap;
+            //font-family: SamsungOneKorean
+        }
+
+        .job-title{
+            font-size: 1.125rem;
+            color: #333333;
+            font-weight: 700;
+            line-height: 1.5rem;
+            white-space: pre-wrap;
+            text-align: left;
+        }
+
+        .job-desc{
+            display: block;
+            text-align: left;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            color: #7C7C7C;
+        }
+    }
+
+    .rich-media{
+        max-width: 100%;
+        height: auto;
+    }
+
+}
