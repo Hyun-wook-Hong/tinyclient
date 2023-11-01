@@ -11,6 +11,15 @@ const Modal = ({ onClose, title, contents }) => {
         onClose?.();
     };
 
+    useEffect(() => {
+        const $body = document.querySelector("body");
+        const overflow = $vody.style.overflow;
+        $body.style.overflow = "hidden";
+        return () => {
+            $body.style.overflow = overflow;
+        }
+    }, []);
+
     useOutsideClick(modalRef, handleClose);
 
     return(
