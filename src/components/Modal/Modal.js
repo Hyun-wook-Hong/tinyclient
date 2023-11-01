@@ -1,27 +1,34 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import ModalContainer from './ModalContainer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import useOutsideClick from '../../hooks/useOutsideClick';
 
 const Modal = ({ onClose, title, contents }) => {
+    const modalRef = useRef(null);
     const handleClose = () => {
         onClose?.();
     };
 
+    useOutsideClick(modalRef, handleClose);
 
     return(
-        <Overlay>
-            <ModalWrap>
-                <CloseButton>
-                    <i className="fa-solid fa-xmark"/>
-                </CloseButton>
-                <Contents>
-                    <img src="happyhappyhappy.png" alt="test" />
-                    <h1>{title}</h1>
-                     <p>{contents}</p>
-                    <Button onClick={handleClose}>Close</Button>
-                </Contents>
-            </ModalWrap>
-        </Overlay>
-
+        <ModalContainer>
+            <Overlay>
+                <ModalWrap ref={modalRef}>
+                    <CloseButton onClick={handleClose}>
+                        <FontAwesomeIcon icon={faXmark} />
+                    </CloseButton>
+                    <Contents>
+                        <img src="happyhappyhappy.png" alt="test" />
+                        <h1>{title}</h1>
+                        <p>{contents}</p>
+                        <Button onClick={handleClose}>Close</Button>
+                    </Contents>
+                </ModalWrap>
+            </Overlay>
+        </ModalContainer>
     );
 
 };
