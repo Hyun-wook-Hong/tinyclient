@@ -8,7 +8,7 @@ const PageAboutMes = () => {
 
     const onClickButton = () => {
         setIsOpen(true);
-    }
+    }   
     
     return (
         <div id="pageAboutMes">

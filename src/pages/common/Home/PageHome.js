@@ -3,6 +3,7 @@ import "./PageHome.scss";
 import CardUIMain from "../../../components/Contents/CardUI/CardUIMain/CardUIMain";
 //import CardUISub  from "../../../components/Contents/CardUI/CardUISub/CardUISub";
 //import ImgSlide from "../../../components/Contents/ImgSlide/ImgSlide";
+//import GridComponent from "../../../components/Grid/GridComponent";
 
 const PageHome = () => {
     /*const imageList = [
@@ -51,6 +52,12 @@ const PageHome = () => {
             {/*<div className="pageHome-contents">
                 <ImgSlide images={imageList}/>
             </div>*/}
+
+            {/*<div className="pageHome-contents">
+                <GridComponent 
+                 rowData={[{ number: 1, }, { number: 2 }, {number: 3}]}
+                 columnDefs={[{ field: "number" }]} />
+                </div>*/}
         </div>
     );
 };

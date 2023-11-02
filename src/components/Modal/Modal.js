@@ -13,7 +13,7 @@ const Modal = ({ onClose, title, contents }) => {
 
     useEffect(() => {
         const $body = document.querySelector("body");
-        const overflow = $vody.style.overflow;
+        const overflow = $body.style.overflow;
         $body.style.overflow = "hidden";
         return () => {
             $body.style.overflow = overflow;
