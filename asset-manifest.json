@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tinyclient/static/css/main.daac0ad4.css",
+    "main.js": "/tinyclient/static/js/main.cff3c799.js",
+    "index.html": "/tinyclient/index.html",
+    "main.daac0ad4.css.map": "/tinyclient/static/css/main.daac0ad4.css.map",
+    "main.cff3c799.js.map": "/tinyclient/static/js/main.cff3c799.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.daac0ad4.css",
+    "static/js/main.cff3c799.js"
+  ]
+}
