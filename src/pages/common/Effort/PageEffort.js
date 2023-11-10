@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import OKButton from "../../../components/Button/OKButton/OKButton";
+import BoardTable from "../../../components/Board/BoardTable/BoardTable";
 import useFetchPosts from "../../../hooks/useFetchPosts";
 import "./PageEffort.scss";
 
@@ -12,31 +13,11 @@ const PageEffort = () => {
             <OKButton text="조회" 
                       onClick={fetchPosts} 
             />
-            <div>
+            <div style={{ marginLeft: "-250px" }}>
                 {loading ? (<p>Loading...</p> )
                 : error ?  (<p>Error: {error.message}</p>)
-                : data ? (
-                    <ul style={{
-                        width: "800px",
-                        marginLeft: "-120px",
-                        height: "auto",   
-                    }}>
-                      {data.map((post) => (
-                        <li key={post.SERIAL_NO}>
-                            <div style={{
-                                display: "inline-block",
-                                margin: "5px",
-                                marginRight: "3px",
-                                padding: "3px",
-                            }}>
-                                <a href={"http://localhost:18080/posts/"+post.SERIAL_NO}>{post.SERIAL_NO}&nbsp;</a>
-                                <a>{post.REQ_CONTENTS}&nbsp;</a>
-                                <a>{post.REQ_USER_NAME}&nbsp;</a>
-                            </div>
-                            </li>
-                      ))}
-                    </ul>
-                  )
+                : data ? 
+                  <BoardTable data={data}/>
                 : (<p>No Data.😪</p>)}
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './OKButton.scss';
 
 const OKButton = ({ text, onClick }) => {
     return(
