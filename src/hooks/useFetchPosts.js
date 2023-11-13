@@ -11,7 +11,7 @@ const useFetchPosts = (url) => {
         setLoading(true);
         try{
             const response = await axios.get(url);
-            console.log(response.data);
+            //console.log(response.data);
             setData(response.data);
         } catch (error){
             setError(error);   

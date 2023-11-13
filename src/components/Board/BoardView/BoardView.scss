@@ -1,0 +1,42 @@
+.post-view {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+
+    
+  
+    .post-req-contents {
+      font-size: 24px;
+      margin: 10px;
+      color: #333;
+    }
+
+    .post-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-top: 1px solid #eee;
+        background-color: #f9f9f9;
+        .post-req-user-name, .post-req-date {
+            color: #666;
+            margin-bottom: 5px;
+        }
+    } 
+    .post-prcs-contents {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+}
+
+  
+  
+  
+  
+  
+  

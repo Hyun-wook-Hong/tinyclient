@@ -1,9 +1,13 @@
 import React from 'react';
 import './OKButton.scss';
 
-const OKButton = ({ text, onClick }) => {
+const OKButton = ({ text, onClick, type, variant }) => {
     return(
-            <button className="ok-button" onClick={onClick}>{text}</button>
+            <button className="ok-button" 
+                    onClick={onClick}
+                    //type={type}
+                    //variant={variant}
+            >{text}</button>
     );
 
 };
